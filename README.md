@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # BwmNg
+=======
+# BwmCli
+>>>>>>> 639d079dd133ccbc81f204fc1d9986fcee3e9d1e
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
