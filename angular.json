@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "./node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
+          },
+          "stylePreprocessorOptions":{
+            "includePaths":[
+              "./styles"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,7 +95,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -120,6 +126,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "bwm-ng"
+    }
+  },
+  "defaultProject": "bwm-ng",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
