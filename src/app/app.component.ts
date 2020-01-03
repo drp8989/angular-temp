@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NGXLogger } from 'ngx-logger';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+
   title = 'bwm-ng';
   componentTitle="I am component";
   clickHandler()
