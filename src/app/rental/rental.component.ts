@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NGXLogger } from 'ngx-logger';
+
 
 @Component({
   selector: 'bwm-rental',
