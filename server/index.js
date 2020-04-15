@@ -10,7 +10,7 @@ const app = express()
 app.use('/api/v1/rentals',rentalRoutes);
 const PORT =3001;
 app.listen(PORT,function(){
-    //   console.log("i am running");
+      console.log("i am running");
 });
 mongoose.connect(config.DB_URI, {useNewUrlParser: true,useUnifiedTopology:true}).then(
     ()=>{
@@ -20,7 +20,7 @@ mongoose.connect(config.DB_URI, {useNewUrlParser: true,useUnifiedTopology:true})
     (err)=>{
         console.error(err);
     });
-const client = new MongoClient(config.DB_URI, { useNewUrlParser: true });
+const client = new MongoClient(config.DB_URI, { useUnifiedTopology:true,useNewUrlParser: true });
 client.connect((err,client) => {
     if(err){
         console.error(err);
